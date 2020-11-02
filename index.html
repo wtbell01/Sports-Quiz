@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/media.css">
+  <script src="https://kit.fontawesome.com/54d99b3e75.js" crossorigin="anonymous"></script>
+  <title>Sports Quiz</title>
+</head>
+<body>
+
+  <!--Header-->
+  <header class="header-container">
+    <div class="header">
+      <!--Header Logo-->
+      <h1 class="header-logo"><a href="#" class="header-logo-link">Sports Quiz</a></h1>
+      <!--Navigation Menu-->
+      <ul class="header-navigation-list">
+        <li><a href="#">Nba</a></li>
+        <li><a href="#">Nfl</a></li>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!--Quiz container-->
+  <div class="quiz-container">
+    <!--Quiz Info: Title, Date posted, sharing buttons-->
+    <div class="quiz-information">
+      <h2 class="quiz-title">Quiz: NFL Fan 2019</h2>
+      <p class="quiz-date-posted">October 22, 2020</p>
+      <div class="share-buttons-container">
+        <a href="#" class="share-button-link facebook-link"><i class="fab fa-facebook-f"></i>Share</a>
+        <a href="#" class="share-button-link url-link"><i class="fas fa-link"></i>Url</a>
+        <a href="#" class="share-button-link email-link"><i class="fas fa-envelope"></i>Email</a>
+      </div>
+      <!--Quiz Image-->
+      <div class="quiz-image-container">
+        <img src="/img/nfl-image.jpg" alt="NFL player and fans">
+      </div>
+      <!--Quiz Directions-->
+      <div class="quiz-directions">
+        <h2 class="quiz-directions-title">Take Our Fan Quiz!</h2>
+        <ul class="quiz-directions-list">
+          <li>1. Answer each question</li>
+          <li>2. See your results below</li>
+          <li>3. Have fun!</li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Quiz Form-->
+    <div id="quiz-container">
+      <!-- Question 1-->
+      <div id = "question-1" class="quiz-question-container">
+        <div class="question">
+          <p><span class="question-number">1)</span> Which player led the league in scoring?</p>
+        </div>
+        <!--Answers-->
+        <div class="answers">
+          <button  class="correct-button" value="correct"> <p>A) James Harden</p></button>
+          <button  class="incorrect-button" value="incorrect"><p>B) LeBron James</p></button>
+          <button  class="incorrect-button" value="incorrect"><p>C) Giannis Antetokounmpo</p></button>
+          <button  class="incorrect-button" value="incorrect"><p>D) Bradley Beal</p></button>
+        </div>
+      </div>
+      
+      <!--Question 2-->
+      <div id = "question-2" class="quiz-question-container">
+        <div class="question">
+          <p><span class="question-number">2)</span> Which player led the league in assists?</p>
+        </div>
+        <!--Answers-->
+        <div class="answers">
+          <button  class="incorrect-button" value="incorrect"> <p>A) Chris Paul</p></button>
+          <button  class="correct-button" value="correct"><p>B) LeBron James</p></button>
+          <button  class="incorrect-button" value="incorrect"><p>C) Ben Simmons</p></button>
+          <button  class="incorrect-button" value="incorrect"><p>D) Luka Doncic</p></button>
+        </div>
+      </div>
+
+  
+      <!--Question 3-->
+      <div id = "question-3" class="quiz-question-container">
+        <div class="question">
+          <p><span class="question-number">3)</span> Which team has the most wins in the League?</p>
+        </div>
+        <!--Answers-->
+        <div class="answers">
+          <button  class="incorrect-button" value="incorrect"> <p>A) LA Clippers</p></button>
+          <button  class="incorrect-button" value="incorrect"><p>B) Los Angeles Lakers</p></button>
+          <button  class="incorrect-button" value="incorrect"><p>C) Boston Celtics</p></button>
+          <button  class="correct-button" value="correct"><p>D) Milwaukee Bucks</p></button>
+        </div>
+      </div>
+
+  
+      <!--Question 4-->
+      <div id = "question-4" class="quiz-question-container">
+        <div class="question">
+          <p><span class="question-number">4)</span> Which team has the worst record in the West?</p>
+        </div>
+        <!--Answers-->
+        <div class="answers">
+          <button class="correct-button" value="correct"> <p>A) Golden State Warriors </p></button>
+          <button class="incorrect-button" value="incorrect"><p>B) Phoenix Suns</p></button>
+          <button  class="incorrect-button" value="incorrect"><p>C) Minnesota Timberwolves</p></button>
+          <button  class="incorrect-button" value="incorrect"><p>D) New Orleans Pelicans</p></button>
+        </div>
+      </div>
+  
+      <!--Question 5-->
+      <div id = "question-5" class="quiz-question-container">
+        <div class="question">
+          <p><span class="question-number">5)</span> Which player leads the league in 3 pointers made per game?</p>
+        </div>
+        <!--Answers-->
+        <div class="answers">
+          <button class="correct-button" value="correct"> <p>A) James Harden</p></button>
+          <button class="incorrect-button" value="incorrect"><p>B) Klay Thompson</p></button>
+          <button  class="incorrect-button" value="incorrect"><p>C) Buddy Hield</p></button>
+          <button  class="incorrect-button" value="incorrect"><p>D) Damian Lillard</p></button>
+        </div>
+      </div>
+    </div>
+
+    <!--Output container-->
+    <div id="quiz-output" class="quiz-output-container">
+      <!--Questions remaining output-->
+      <div class="questions-remaining">
+        <p class = "questions-remaining-output">5</p>
+        <h2 class="questions-remaining-title">Questions Remaining</h2>
+      </div>
+      <!--Total score output-->
+      <div class="total-score">
+        <p class = "total-score-output"></p>
+        <h2 class="total-score-title">Total Score</h2>
+      </div> 
+    </div>
+  </div>
+
+    <!--Footer-->
+    <footer class="footer">
+      <p class="footer-text">Copyright &copy; Sports Quiz</p>
+    </footer>
+<script src="/main.js"></script>
+</body>
+</html>
