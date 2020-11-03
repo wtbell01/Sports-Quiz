@@ -24,7 +24,7 @@
 
   /*Quiz image*/
   .quiz-image-container{
-    height: 60vh;
+    height: 55vh;
     width: 90%;
     margin: 3rem auto 0 auto;
   }
@@ -47,6 +47,13 @@
     font-size: 1.7rem;
   }
 
+}
+
+@media(max-width:415px){
+  .quiz-image-container{
+    height: 40vh;
+  }
+  
 }
 
 @media(max-width:375px){
